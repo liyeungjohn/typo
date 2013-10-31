@@ -1,5 +1,7 @@
 h1. Name: Yeung John Li
     CS169HW5a
+    heroku: http://scary-tundra-8589.herokuapp.com 
+    | git@heroku.com:scary-tundra-8589.git
 
 h1. About Typo
 Typo has been around since March of 2005 making it one of the oldest blogging platforms in Rails.
