@@ -1,5 +1,5 @@
-h1. Name: Yeung Jon Li
-h1. CS169HW5a
+h1. Name: Yeung John Li
+    CS169HW5a
 
 h1. About Typo
 Typo has been around since March of 2005 making it one of the oldest blogging platforms in Rails.
