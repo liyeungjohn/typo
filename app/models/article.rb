@@ -3,6 +3,24 @@ require 'uri'
 require 'net/http'
 
 class Article < Content
+
+  def merge(target_id)    
+    target = Article.find_by_id(target_id)
+    if target.nil?
+      return false
+    end
+    if self.id & target.id
+      self.body = self.body + target.body
+      self.comments << target.comments
+      self.save!
+      target = Article.find_by_id(target_id)
+      target.destroy 
+      return true 
+    else
+      return false
+    end 
+  end
+
   include TypoGuid
   include ConfigManager
 
